@@ -19,17 +19,13 @@
    **Nombre del servidor de SQL Server al que se conectará la aplicación.**  
    server = ''
    
-   **Nombre de la base de datos en el servidor de SQL Server.**
-   
+   **Nombre de la base de datos en el servidor de SQL Server.**  
    database = '' 
 
-   **Nombre de usuario para autenticarse en el servidor de SQL Server.**
-
-   
+   **Nombre de usuario para autenticarse en el servidor de SQL Server.**  
    user_name = ''
    
-   **Contraseña correspondiente al nombre de usuario.**
-   
+   **Contraseña correspondiente al nombre de usuario.**  
    password = ''
    
    **Controlador ODBC que se utilizará para la conexión con SQL Server.** -> *(Puede cambiar por el controlador de su eleccion, compatible con su sistema.)*
