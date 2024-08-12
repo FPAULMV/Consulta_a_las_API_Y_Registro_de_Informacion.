@@ -2,8 +2,7 @@
 
 # - **Propósito:**
  
-   Las API´s de Pemex solo están disponibles para sus comercializadores afiliados. Este repositorio se crea mientras trabajo para uno de estos y pretende automatizar las consultas a la API para descargar y almacenar esta información.
-
+   Las API´s de Pemex solo están disponibles para sus comercializadores afiliados. Este repositorio se crea mientras trabajo para uno de estos y pretende automatizar las consultas a la API para descargar y almacenar esta información.  
 # - **Funcionamiento general:**
 
   ~ El scrip esta pensado para ejecutarse automaticamente cada cierto tiempo *(Depende de las nececidades del comercializador)* sin la intervencion de una persona, aunque tambien se puede correr "manualmente".
