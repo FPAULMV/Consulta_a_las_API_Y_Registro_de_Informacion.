@@ -57,5 +57,18 @@
    name_api = '' 
    
    **Nombre predeterminado del documento que se creará para almacenar los datos descargados.**  
-   name_dir = '' 
- 
+   name_dir = ''   
+   **Quedando de la siguiente manera**  
+   server =  
+   database =   
+   user_name =    
+   password =   
+   driver =   
+   user =   
+   passw =   
+   url =    
+   query_days = 1 
+   time_sleep = 60 
+   download_path =   
+   name_api =   
+   name_dir =    
