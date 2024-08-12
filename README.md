@@ -11,14 +11,12 @@
   Ejemplo:
    Hoy es = 03-01-2024, query_days = 2, entonces el rango de fechas para realizar la consulta sera del 01-01-2024 al 03-01-2024
 
-
 # - **Principales Funciones:**
    Inicialmente hay que generar un archvio .env en el directorio raiz de el proyecto donde ingresaremos configuraciones clave para el funcionamiento del scrip. Se explican a continuacion:
 
    **-- Datos de conexión a SQL Server. --**
   
-   **Nombre del servidor de SQL Server al que se conectará la aplicación.**
-   
+   **Nombre del servidor de SQL Server al que se conectará la aplicación.**  
    server = ''
    
    **Nombre de la base de datos en el servidor de SQL Server.**
