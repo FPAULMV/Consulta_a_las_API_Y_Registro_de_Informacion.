@@ -12,7 +12,7 @@
    Inicialmente hay que generar un archvio .env en el directorio raiz de el proyecto donde ingresaremos configuraciones clave para el funcionamiento del scrip. Se explican a continuacion:
 
    **# -- Datos de conexión a SQL Server. -- #**
-   # Nombre del servidor de SQL Server al que se conectará la aplicación.
+   **# Nombre del servidor de SQL Server al que se conectará la aplicación.**
    server = ''
    # Nombre de la base de datos en el servidor de SQL Server.
    database = '' 
