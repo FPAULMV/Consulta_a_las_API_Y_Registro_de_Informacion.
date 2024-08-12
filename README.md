@@ -27,9 +27,12 @@
 
    
    user_name = ''
-   # Contraseña correspondiente al nombre de usuario.
+   
+   **Contraseña correspondiente al nombre de usuario.**
+   
    password = ''
-   # Controlador ODBC que se utilizará para la conexión con SQL Server. -> (Puede cambiar por el controlador de su eleccion, compatible con su sistema.)
+   
+   **Controlador ODBC que se utilizará para la conexión con SQL Server.** -> *(Puede cambiar por el controlador de su eleccion, compatible con su sistema.)*
    driver = ODBC Driver 17 for SQL Server 
    
    # -- Datos de conexión a la API. -- #
