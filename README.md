@@ -68,8 +68,8 @@
    user =   
    passw =   
    url =    
-   query_days = 1 
-   time_sleep = 60 
+   query_days = 1   
+   time_sleep = 60   
    download_path =   
    name_api =   
    name_dir =    
