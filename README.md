@@ -28,43 +28,34 @@
    **Contraseña correspondiente al nombre de usuario.**  
    password = ''
    
-   **Controlador ODBC que se utilizará para la conexión con SQL Server.** -> *(Puede cambiar por el controlador de su eleccion, compatible con su sistema.)*
-   
+   **Controlador ODBC que se utilizará para la conexión con SQL Server.** -> *(Puede cambiar por el controlador de su eleccion, compatible con su sistema.)*  
    driver = ODBC Driver 17 for SQL Server 
    
    **-- Datos de conexión a la API. --**
    
-   **Nombre de usuario para autenticarse en la API.** -> *(Estas credenciales las proporciona Pemex a sus comercializadoras)*
-   
+   **Nombre de usuario para autenticarse en la API.** -> *(Estas credenciales las proporciona Pemex a sus comercializadoras)*  
    user = ''
    
-   **Contraseña correspondiente al nombre de usuario de la API.** -> *(Estas credenciales las proporciona Pemex a sus comercializadoras)*
-   
+   **Contraseña correspondiente al nombre de usuario de la API.** -> *(Estas credenciales las proporciona Pemex a sus comercializadoras)*  
    passw = ''
    
-   **URL base de la API, sin incluir los argumentos de búsqueda, y finalizando con '/'.** -> *(La URL de la API tambien la proporciona pemex a sus comercializadoras)*
-   
+   **URL base de la API, sin incluir los argumentos de búsqueda, y finalizando con '/'.** -> *(La URL de la API tambien la proporciona pemex a sus comercializadoras)*  
    url = ''
    
    **-- Datos de configuración. --**
    
-   **Número de días anteriores a la fecha actual que se utilizarán para la consulta.** -> *(Es el rango de días anterior a la fecha actual, en este rango de fechas se ejecutara el scrip. Mantener 1 como predeterminado)*
-   
+   **Número de días anteriores a la fecha actual que se utilizarán para la consulta.** -> *(Es el rango de días anterior a la fecha actual, en este rango de fechas se ejecutara el scrip. Mantener 1 como predeterminado)*  
    query_days = 1 
    
-   **Tiempo de espera en segundos entre cada consulta a la API.** -> *(Al hacer varias consultas seguidas la API devuelve un codigo http 429, las consultas se pueden hacer con 60 segundos de diferencia. Puede aumentar este tiempo segun sus nececidades.)*
-   
+   **Tiempo de espera en segundos entre cada consulta a la API.** -> *(Al hacer varias consultas seguidas la API devuelve un codigo http 429, las consultas se pueden hacer con 60 segundos de diferencia. Puede aumentar este tiempo segun sus nececidades.)*  
    time_sleep = 60 
    
-   **Ruta del directorio donde se descargarán los archivos obtenidos de la API.**
-   
+   **Ruta del directorio donde se descargarán los archivos obtenidos de la API.**  
    download_path = '' 
    
-   **Nombre del directorio predeterminado donde se almacenarán los archivos descargados.**
-   
+   **Nombre del directorio predeterminado donde se almacenarán los archivos descargados.**  
    name_api = '' 
    
-   **Nombre predeterminado del documento que se creará para almacenar los datos descargados.**
-   
+   **Nombre predeterminado del documento que se creará para almacenar los datos descargados.**  
    name_dir = '' 
  
