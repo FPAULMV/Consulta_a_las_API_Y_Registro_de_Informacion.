@@ -18,11 +18,11 @@
    **Nombre del servidor de SQL Server al que se conectará la aplicación.**
    
    server = ''
+   
    **Nombre de la base de datos en el servidor de SQL Server.**
    
    database = '' 
 
-   
    **Nombre de usuario para autenticarse en el servidor de SQL Server.**
 
    
