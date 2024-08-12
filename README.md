@@ -9,7 +9,9 @@
   
   ~ Depende de un rango de fechas entre una fecha inicial y una fecha final, que se puede ingresar en el codigo y despues ejecutarse. En caso de no ingresar una fecha inicial el codigo se ejecutara en el rango de fechas comprendido entre la fecha actual menos la cantidad de dias señalado en el archivo .env con el nombre: 'query_days'.
   Ejemplo:
-   Hoy es = 03-01-2024, query_days = 2, entonces el rango de fechas para realizar la consulta sera del 01-01-2024 al 03-01-2024
+   Hoy es = 03-01-2024, query_days = 2, entonces el rango de fechas para realizar la consulta sera del 01-01-2024 al 03-01-2024  
+  ~ Para cada una de estas fechas la funcion *url_embarques()* validara que las fechas sean validas y creara 2 listas, una con la lista de fechas en el rango y otra con la lista de las URL´s que despues se consultaran.  
+  
 
 # - **Principales Funciones:**
    Inicialmente hay que generar un archvio .env en el directorio raiz de el proyecto donde ingresaremos configuraciones clave para el funcionamiento del scrip. Se explican a continuacion:
