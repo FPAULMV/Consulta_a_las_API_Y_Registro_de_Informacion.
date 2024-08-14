@@ -1,5 +1,6 @@
 # Procesamiento de Archivos JSON y Almacenamiento en SQL Server
 
+## **Propósito:**  
 Este proyecto tiene como objetivo leer archivos JSON almacenados en un directorio específico, procesar los datos y almacenarlos en una base de datos SQL Server. Los archivos JSON se identifican por su fecha en el nombre del archivo y se almacenan en subdirectorios organizados por mes y año.
 
 ## Descripción del Código
