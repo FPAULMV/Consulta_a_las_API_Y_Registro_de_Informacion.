@@ -44,7 +44,16 @@ dia = 1
 mes = 'Enero'
 año = 2024
 ```
-- ***validar_path()***
+- ***validar_path():***
+Valida si una ruta a directorio existe. Si no, la crea.
+```python
+def validar_path(path: str):
+```
+**Requiere:** Ruta de el directorio a validar *(como str)*
+```bash
+C:\Ruta\a_validar_de\tu_directortio\
+```
+**Retorna:** No retorna ningun valor.
 
 
 
