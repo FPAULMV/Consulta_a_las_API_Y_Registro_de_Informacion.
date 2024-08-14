@@ -1,9 +1,10 @@
-# Consulta_a_las_API_de_Pemex
+# Consulta_a_las_API_de_Pemex.
 
-## - **Propósito:**
- 
+# **Propósito:**  
    Las API´s de Pemex solo están disponibles para sus comercializadores afiliados. Este repositorio se crea mientras trabajo para uno de estos y pretende automatizar las consultas a la API para descargar y almacenar esta información.  
-## - **Funcionamiento general:**   
+
+#**Contenido.**
+## **Funcionamiento general:**   
 
 ### **Funciones principales.**   
 
@@ -11,7 +12,7 @@ Función principal donde se llama a la ejecucion de todo el codigo.
 ``` Python
 def main():
 ```
-Uso de: url_embarques()
+###Uso de: url_embarques()
 ```python
 def url_embarques(start_date: str =None, end_date: str =None):
    """
