@@ -5,16 +5,16 @@
    Las API´s de Pemex solo están disponibles para sus comercializadores afiliados. Este repositorio se crea mientras trabajo para uno de estos y pretende automatizar las consultas a la API para descargar y almacenar esta información.  
 ## - **Funcionamiento general:**
 
-  ~ El scrip esta pensado para ejecutarse automaticamente cada cierto tiempo *(Depende de las nececidades del comercializador)* sin la intervencion de una persona, aunque tambien se puede correr "manualmente".  
-  ~ Depende de un rango de fechas entre una fecha inicial y una fecha final, que se puede ingresar en el codigo y despues ejecutarse o en caso de no ingresar una fecha inicial el codigo se ejecutara en el rango de fechas comprendido entre la fecha actual menos la cantidad de dias señalado en el archivo .env con el nombre: 'query_days'.
-  Ejemplo:
-   Hoy es = 03-01-2024, query_days = 2, entonces el rango de fechas para realizar la consulta sera del 01-01-2024 al 03-01-2024. Estas fechas se devuelven en un formato de texto *'ddmmaaaa'*.  
-  ~ Para este rango de fechas la funcion *url_embarques()* validara que las fechas sean correctas y creara 2 listas, una con la lista de fechas en el rango y otra con la lista de las URL´s que despues se consultaran.  
-  ~ Por cada fecha en el rango se realizaran diversas funciones.  
-  ~ Con la funcion *get_dmy(fecha_str)* devuelve 3 objetos dia, mes *(en texto)* y año.  
-  ~ El año y el mes se utilizan para format la ruta del directorio dende se almacenara la informacion descargada de la api combinando la variable del archivo .env *'download_path'* + *'name_api'* + {año} + {mes}.  
-  ~ La funcion *validar_path()* busca la recien creada ruta a el directorio y si no la encuentra la crea.  
-  ~ Enseguida se creara un nombre para el documento descargado por la API usando la convinacion de la variable del archivo .env *'name_dir'* + 
+'print()'
+
+
+
+
+
+
+
+
+
 
 ## - **Principales Funciones:**
    Inicialmente hay que generar un archvio .env en el directorio raiz de el proyecto donde ingresaremos configuraciones clave para el funcionamiento del scrip. Se explican a continuacion:
