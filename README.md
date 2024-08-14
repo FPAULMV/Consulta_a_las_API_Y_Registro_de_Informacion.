@@ -65,7 +65,7 @@ def get_version(file_base: str, directory: str):
 ```  
 **Requiere:** 
    - **file_base:** *(como str)*
-     El nombre base que llevara el archvio descargado, a este se le agregara *"_V_"* mas, el numero de version *'1'*.
+     El nombre base que llevara el archvio descargado, a este se le agregara *"\_V\_"* mas, el numero de version *'1'*.
    - **directory:** *(como str)*
      El directorio donde se encuentran los archivos.
 ```bash
