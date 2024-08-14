@@ -36,7 +36,7 @@ Devuelve día, mes, y año de una fecha dada.
 ```python
 def get_dmy(fecha_str: str):
 ```
-**Requiere:** una fecha *(como str)* en formato 'ddmmaaaa'.  
+**Requiere:** una fecha *(como str)* en formato `'ddmmaaaa'`.  
 ```bash
 '01012024'
 ```
@@ -76,14 +76,14 @@ nuevo_nombre = 'C:\Usuarios\Mi_Usuario\Documentos\Mi_archivo_V_1'
 ```
 
 - ***url_embarques():***
-Genera URLs de la API a consultar, agregando el parámetro de búsqueda para la API, que en este caso es una fecha en formato 'ddmmaaaa' y una lista de fechas en formato 'ddmmaaaa' dentro de un rango de fechas proporcionado.
+Genera URLs de la API a consultar, agregando el parámetro de búsqueda para la API, que en este caso es una fecha en formato `'ddmmaaaa'` y una lista de fechas en formato `'ddmmaaaa'` dentro de un rango de fechas proporcionado.
 ```python
 def url_embarques(start_date: str =None, end_date: str =None):
 ```  
 
 **Requiere:**  
-   - **start_date:** *(como str, opcional)* Fecha de inicio en formato 'ddmmaaaa'. Si no se proporciona, se toma el valor de ***'query_days'*** en el archivo `.env`.
-   - **end_date:** *(como str, opcional)* Fecha de fin en formato 'ddmmaaaa'. Si no se proporciona, se toma el valor de la fecha actual.
+   - **start_date:** *(como str, opcional)* Fecha de inicio en formato `'ddmmaaaa'`. Si no se proporciona, se toma el valor de ***`query_days`*** en el archivo `.env`.
+   - **end_date:** *(como str, opcional)* Fecha de fin en formato `'ddmmaaaa'`. Si no se proporciona, se toma el valor de la fecha actual.
 ```bash
 start_date = '01012024'
 end_date = '03012024'
@@ -91,7 +91,7 @@ end_date = '03012024'
 
 **Retorna:**
    - Lista de URLs a consultar más el parámetro de búsqueda. 
-   - Lista de fechas en formato 'ddmmaaaa'.
+   - Lista de fechas en formato `'ddmmaaaa'`.
 ```bash
 URLs:
 (https://api_a_consultar/01012024, https://api_a_consultar/02012024, https://api_a_consultar/03012024)
@@ -105,7 +105,7 @@ Muestra un temporizador en la consola que cuenta hacia atrás, iniciando desde e
 def timer(segundos):
 ```
 **Requiere:**
-   - **segundos:** *(cualquier valor)* Este valor se proporciona en la variable ***time_sleep*** en el archivo .env.
+   - **segundos:** *(cualquier valor)* Este valor se proporciona en la variable ***`time_sleep`*** en el archivo `.env`.
 ```bash
 segundos = 5
 ```
@@ -122,7 +122,7 @@ Tiempo restante para la siguiente consulta: 1 segundo.
 
 ### **Configuración**  
 
-Configura las variables de entorno para el script con un archivo .env ubicado en el directorio raíz donde se ejecuta el código. 
+Configura las variables de entorno para el script con un archivo `.env` ubicado en el directorio raíz donde se ejecuta el código. 
 
 ***user:*** Nombre de usuario proporcionado por Pemex para autenticarnos en la API.
 ```bash
@@ -136,32 +136,32 @@ passw = m1Passw0rd!
 ```bash
 url = https://api_a_consultar/
 ```
-***query_days:*** Utilizada en la función *url_embarques()*, indica el rango de días para los cuales se realizará una consulta en la API. Predeterminado en *'1'*
+***query_days:*** Utilizada en la función *`url_embarques()`*, indica el rango de días para los cuales se realizará una consulta en la API. Predeterminado en *1*
 ```bash
 query_days = 1 
 ```
-***time_sleep:*** Utilizada en la función *timer()*, indica el número de segundos para la cuenta regresiva. Predeterminado en *'60'*.
+***time_sleep:*** Utilizada en la función *`timer()`*, indica el número de segundos para la cuenta regresiva. Predeterminado en *60*.
 ```bash
 time_sleep = 60 
 ```
-***download_path:*** Utilizada en la variable *path* de la función *main()*. Define la ruta donde se descargará la información de la API y el nombre que va a tener cada archivo según su versión. 
+***download_path:*** Utilizada en la variable *`path`* de la función *`main()`*. Define la ruta donde se descargará la información de la API y el nombre que va a tener cada archivo según su versión. 
 ```bash
 download_path = C:\Usuarios\Mi_Usuario\Documentos\
 ```  
-***name_api:*** Utilizada en la variable *path* de la función *main()*. Define, después de la ruta principal, el nombre de la carpeta donde se guardarán los archivos. Esto permite controlar dónde se guardan los documentos de cada API. 
+***name_api:*** Utilizada en la variable *`path`* de la función *`main()`*. Define, después de la ruta principal, el nombre de la carpeta donde se guardarán los archivos. Esto permite controlar dónde se guardan los documentos de cada API. 
 ```bash
 name_api = mi_api
 ```
-***name_dir:*** Utilizada en la variable *path* de la función *main()*. Define, después de la ruta principal *('download_path')*, el nombre de la carpeta donde se guardarán los archivos. Esto permite controlar dónde se guardan los documentos de cada API. 
+***name_dir:*** Utilizada en la variable *`path`* de la función *`main()`*. Define, después de la ruta principal *(`download_path`)*, el nombre de la carpeta donde se guardarán los archivos. Esto permite controlar dónde se guardan los documentos de cada API. 
 ```bash
 name_dir = Mi_archivo
 ```
-***num_try:*** Utilizada en la variable *max_retries* de la función *main()*. Define el número de intentos que se realizarán a la API en caso de que la solicitud HTTP devuelva un valor diferente de *'200'*. Puede cambiar el valor dependiendo de sus necesidades. 
+***num_try:*** Utilizada en la variable *`max_retries`* de la función *`main()`*. Define el número de intentos que se realizarán a la API en caso de que la solicitud HTTP devuelva un valor diferente de *200*. Puede cambiar el valor dependiendo de sus necesidades. 
 ```bash
 num_try = 1
 ```
 
-El archivo .env resultante se verá así:
+El archivo `.env` resultante se verá así:
 ```bash
 user = mi_usuario
 passw = m1Passw0rd!
