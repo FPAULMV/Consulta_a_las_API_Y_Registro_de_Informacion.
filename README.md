@@ -18,4 +18,4 @@ Instalar via pip las librerias requests y  python-decouple.
 ```bash
 pip install requests python-decouple
 ```
-
+*json*, *os*, *datetime* (de la cual *datetime* y *timedelta* son partes), *re*, *time*, *sys*, y *logging* son parte de la biblioteca estándar de Python, por lo que no necesitan instalación a través de pip.
