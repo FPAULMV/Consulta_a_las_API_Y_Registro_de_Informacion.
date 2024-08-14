@@ -29,4 +29,4 @@ Puedes clonar este repositorio a travez  git bash.
 
 ```
 ### **Descripción de funciones.**  
-***get_dmy()***
+- ***get_dmy()***
