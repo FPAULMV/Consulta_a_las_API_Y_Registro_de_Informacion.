@@ -38,4 +38,9 @@ def get_dmy(fecha_str: str):
 ```bash
 '01012024'
 ```
-**Retorna:** El dia (como int), el nombre del mes en español
+**Retorna:** El dia *(como int)*, el nombre del mes en español *(como str)*, el año *(como int)*.
+```bash
+dia = 1
+mes = 'Enero'
+año = 2024
+```
