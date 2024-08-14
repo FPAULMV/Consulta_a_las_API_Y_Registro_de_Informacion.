@@ -101,6 +101,13 @@ Fechas:
 (01012024, 02012024, 03012024)
 ```
 
+- ***timer(segundos):***
+Muestra un temporizador en la consola que cuenta hacia atrás, iniciando desde el número de segundos especificado.
+```python
+def timer(segundos):
+``` 
+
+
 
 
 
