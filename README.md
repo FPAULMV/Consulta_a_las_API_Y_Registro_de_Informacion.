@@ -72,10 +72,14 @@ directory = 'C:\Usuarios\Mi_Usuario\Documentos\'
 ```
 **Retorna:** La ruta del directorio mas, el nombre del nuevo archivo con el sufijo de versión.  
 ```bash
-directory = 'C:\Usuarios\Mi_Usuario\Documentos\Mi_archivo_V_1'
+nuevo_nombre = 'C:\Usuarios\Mi_Usuario\Documentos\Mi_archivo_V_1'
 ```
 
-
+- ***url_embarques():***
+Genera URLs para consultar a una API y una lista de fechas en formato 'ddmmaaaa' dentro de un rango de fechas proporcionado.  
+```python
+def url_embarques(start_date: str =None, end_date: str =None):
+```  
 
 
 
