@@ -36,7 +36,7 @@ Devuelve dia, mes, año de una fecha dada.
 ```python
 def get_dmy(fecha_str: str):
 ```
-**Requiere:** una fecha como str en formato 'ddmmaaaa'.  
+**Requiere:** una fecha *(como str)* en formato 'ddmmaaaa'.  
 ```bash
 '01012024'
 ```
