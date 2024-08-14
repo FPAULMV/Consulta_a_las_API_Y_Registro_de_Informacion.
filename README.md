@@ -5,11 +5,33 @@
    Las API´s de Pemex solo están disponibles para sus comercializadores afiliados. Este repositorio se crea mientras trabajo para uno de estos y pretende automatizar las consultas a la API para descargar y almacenar esta información.  
 ## - **Funcionamiento general:**   
 
-### **Funciones principales del codigo.**   
+### **Funciones principales.**   
 
 Función principal donde se llama a la ejecucion de todo el codigo.
 ``` Python
 def main():
+```
+Uso de: url_embarques()
+```python
+def url_embarques(start_date: str =None, end_date: str =None):
+   """
+    *Genera URLs para consultar a una API y una lista de fechas en formato 'ddmmaaaa'
+    dentro de un rango de fechas proporcionado.*
+
+    **Parámetros:**  
+    - **start_date:** *Fecha de inicio en formato **'ddmmaaaa'****.* *Si no se proporciona, se usa el valor del archivo .env* **'query_days'***.*
+    - **end_date:** *Fecha de fin en formato* **'ddmmaaaa'***.* *Si no se proporciona, se usa la fecha actual.*
+
+    **Retorna:**  
+    - **urls:** *Lista de URLs generadas para cada fecha.*
+    - **days_list:** *Lista de fechas en formato* **'ddmmaaaa'***.*
+    """
+```  
+Valida que
+```
+```
+
+```
 ```
 
 
