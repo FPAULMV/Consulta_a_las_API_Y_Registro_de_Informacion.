@@ -12,6 +12,7 @@
 - [Licencia.]()
    
 ### **Dependencias.**  
+
 **Librerias requeridas:** *python-decouple*, *requests*, *json*, *os*, *datetime*, *re*, *time*, *sys*, *logging*.  
 
 Instalar via pip las librerias requests y  python-decouple.  
@@ -29,6 +30,7 @@ Puedes clonar este repositorio a travez  git bash.
 
 ```
 ### **Descripción de funciones.**  
+
 - ***get_dmy():***  
 Devuelve dia, mes, año de una fecha dada.
 ```python
@@ -112,8 +114,7 @@ def timer(segundos):
 ```bash
 segundos = 5
 ```
-**Retorna:**  
-Cuenta regresiva en consola. 
+**Retorna:** Cuenta regresiva en consola. 
 ```bash
 Tiempo restante para la siguiente consulta: 5 segundos.
 Tiempo restante para la siguiente consulta: 4 segundos.
@@ -124,7 +125,46 @@ Tiempo restante para la siguiente consulta: 1 segundos.
 - Puede volver a consultar!
 ```
 
+### **Configuraciones.**  
 
+Configuramos las variables de entorno para el scrip con un archivo .env ubicado en el directorio raíz donde se ejecuta el codigo. 
+
+***user:*** Nombre de usuario proporcionado por Pemex para autenticarnos en la API .
+```bash
+user = mi_usuario
+```
+***passw:*** Contraseña proporcionada por Pemex, del usuario con el que nos autenticamos en la API.
+```bash
+passw = m1Passw0rd!
+```
+***url:*** URL de la API proporcionada por Pemex. 
+```bash
+url:https://api_a_consultar/
+```
+***query_days:*** Utilizada en la función *url_embarques()* indica el rango de días para los cuales se realizara una consulta en la API. Predeterminado en *'1'*
+```bash
+query_days = 1 
+```
+***time_sleep:*** Utilizada en la funcion *timer()* indica el numero de segundos para la cuenta regresiva. Predeterminado en *'60'*.
+```bash
+time_sleep = 60 
+```
+***download_path:*** Utilizada en la funcion *timer()* indica el numero de segundos para la cuenta regresiva. Predeterminado en *'60'*.
+```bash
+time_sleep = 60 
+```
+
+
+download_path = C:\Usuarios\Mi_Usuario\Documentos\
+name_api = Embarques 
+name_dir = Embarque
+num_try = 2
+
+server = 
+database = 
+user_name = 
+password = 
+driver = 
 
 
 
