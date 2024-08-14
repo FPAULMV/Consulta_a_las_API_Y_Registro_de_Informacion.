@@ -4,8 +4,12 @@
    Las API´s de Pemex solo están disponibles para sus comercializadores afiliados. Este repositorio se crea mientras trabajo para uno de estos y pretende automatizar las consultas a la API para descargar y almacenar esta información.  
 
 # **Contenido.**  
+- [Dependencias.]()
+- [Instalacion.]()
 - [Descripcion de funciones.]()
-- 
+- [Configuracion.]()
+- [Uso.]()
+- [Licencia.]()
    
 ## **Funcionamiento general:**
 
