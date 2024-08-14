@@ -3,10 +3,9 @@
 # - **Propósito:**
  
    Las API´s de Pemex solo están disponibles para sus comercializadores afiliados. Este repositorio se crea mientras trabajo para uno de estos y pretende automatizar las consultas a la API para descargar y almacenar esta información.  
-# - **Funcionamiento general:**
+## - **Funcionamiento general:**
 
-  ~ El scrip esta pensado para ejecutarse automaticamente cada cierto tiempo *(Depende de las nececidades del comercializador)* sin la intervencion de una persona, aunque tambien se puede correr "manualmente".
-  
+  ~ El scrip esta pensado para ejecutarse automaticamente cada cierto tiempo *(Depende de las nececidades del comercializador)* sin la intervencion de una persona, aunque tambien se puede correr "manualmente".  
   ~ Depende de un rango de fechas entre una fecha inicial y una fecha final, que se puede ingresar en el codigo y despues ejecutarse o en caso de no ingresar una fecha inicial el codigo se ejecutara en el rango de fechas comprendido entre la fecha actual menos la cantidad de dias señalado en el archivo .env con el nombre: 'query_days'.
   Ejemplo:
    Hoy es = 03-01-2024, query_days = 2, entonces el rango de fechas para realizar la consulta sera del 01-01-2024 al 03-01-2024. Estas fechas se devuelven en un formato de texto *'ddmmaaaa'*.  
@@ -65,7 +64,7 @@
    **Nombre predeterminado del documento que se creará para almacenar los datos descargados.**  
    name_dir = ''   
    
-   **Quedando de la siguiente manera**  
+   **O de la siguiente manera**  
    server =  
    database =   
    user_name =    
