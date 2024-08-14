@@ -101,12 +101,28 @@ Fechas:
 (01012024, 02012024, 03012024)
 ```
 
-- ***timer(segundos):***
-Muestra un temporizador en la consola que cuenta hacia atrás, iniciando desde el número de segundos especificado.
+- ***timer():***
+Muestra un temporizador en la consola que cuenta hacia atrás, iniciando desde el número de segundos especificado. Esto para interactuar con el usuario y evitar error http 429 por *'Demasiadas solicitudes'*. Esta predeterminado en 60 segundos. 
 ```python
 def timer(segundos):
-``` 
+```
+**Requiere:**
+   - **segundos:** *(cualquier valor)*
+     Este valor se proporciona en la variable ***time_sleep*** en el archivo .env.
+```bash
+segundos = 5
+```
+**Retorna:**  
+Cuenta regresiva en consola. 
+```bash
+Tiempo restante para la siguiente consulta: 5 segundos.
+Tiempo restante para la siguiente consulta: 4 segundos.
+Tiempo restante para la siguiente consulta: 3 segundos.
+Tiempo restante para la siguiente consulta: 2 segundos.
+Tiempo restante para la siguiente consulta: 1 segundos.
 
+- Puede volver a consultar!
+```
 
 
 
