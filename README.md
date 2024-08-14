@@ -12,7 +12,9 @@
 - [Licencia.]()
    
 ### **Dependencias.**  
-Instalar via pip la libreria:  
+Librerias requeridas: *python-decouple*, *requests*, *json*, *os*, *datetime*, *re*, *time*, *sys*, *logging*.  
+Instalar via pip las librerias requests y  python-decouple.  
 ```bash
 pip install requests python-decouple
 ```
+
