@@ -14,24 +14,24 @@ Las API de Pemex solo están disponibles para sus comercializadores afiliados. E
    
 ### **Dependencias**  
 
-**Librerías requeridas:** *python-decouple*, *requests*, *json*, *os*, *datetime*, *re*, *time*, *sys*, *logging*.  
+**Librerías requeridas:** *`python-decouple`*, *`requests`*, *`json`*, *`os`*, *`datetime`*, *`re`*, *`time`*, *`sys`*, *`logging`*.  
 
 Instalar las librerías `requests` y `python-decouple` vía pip:  
 ```bash
 pip install requests python-decouple
 ```
-*json*, *os*, *datetime* (de la cual *datetime* y *timedelta* son partes), *re*, *time*, *sys*, y *logging* son parte de la biblioteca estándar de Python, por lo que no necesitan instalación a través de pip.  
+*`json`*, *`os`*, *`datetime`* (de la cual *`datetime`* y *`timedelta`* son partes), *`re`*, *`time`*, *`sys`*, y *`logging`* son parte de la biblioteca estándar de Python, por lo que no necesitan instalación a través de pip.  
 
 ### **Instalación**  
 
-Puedes clonar este repositorio a través de git bash: 
+Puedes clonar este repositorio a través de git: 
 ```bash
 git clone https://github.com/FPAULMV/Consulta_a_las_API_de_Pemex
 ```
 
 ### **Descripción de funciones**  
 
-- ***get_dmy():***  
+- ***`get_dmy():`***  
 Devuelve día, mes, y año de una fecha dada.
 ```python
 def get_dmy(fecha_str: str):
@@ -82,7 +82,7 @@ def url_embarques(start_date: str =None, end_date: str =None):
 ```  
 
 **Requiere:**  
-   - **start_date:** *(como str, opcional)* Fecha de inicio en formato 'ddmmaaaa'. Si no se proporciona, se toma el valor de ***'query_days'*** en el archivo .env.
+   - **start_date:** *(como str, opcional)* Fecha de inicio en formato 'ddmmaaaa'. Si no se proporciona, se toma el valor de ***'query_days'*** en el archivo `.env`.
    - **end_date:** *(como str, opcional)* Fecha de fin en formato 'ddmmaaaa'. Si no se proporciona, se toma el valor de la fecha actual.
 ```bash
 start_date = '01012024'
