@@ -57,7 +57,7 @@ C:\Ruta\a_validar_de\tu_directortio\
 **Retorna:** No retorna ningun valor.  
 
 - ***get_version():***
-Encuentra el siguiente número de versión para los archivos que siguen el patrón dado dentro de un directorio específico.  
+Encuentra el siguiente número de versión para los archivos que siguen el patrón dado dentro de un directorio específico. El propocito de la funcion es evitar archivos con nombres duplicados agregando un numero de version. 
 ```python
 def get_version(file_base: str, directory: str):
 ```  
@@ -68,10 +68,12 @@ def get_version(file_base: str, directory: str):
      El directorio donde se encuentran los archivos.
 ```bash
 file_base = 'Mi_archivo'
-directory = 'c:\Usuarios\Mi_Usuario\Documentos\'
+directory = 'C:\Usuarios\Mi_Usuario\Documentos\'
 ```
-**Retorna:** El nombre del nuevo archivo con el sufijo de versión.  
-
+**Retorna:** La ruta del directorio mas, el nombre del nuevo archivo con el sufijo de versión.  
+```bash
+directory = 'C:\Usuarios\Mi_Usuario\Documentos\Mi_archivo_V_1'
+```
 
 
 
