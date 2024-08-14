@@ -31,7 +31,7 @@ git clone https://github.com/FPAULMV/Consulta_a_las_API_de_Pemex
 
 ### **Descripción de funciones**  
 
-- ***`get_dmy():`***  
+- ***get_dmy():***  
 Devuelve día, mes, y año de una fecha dada.
 ```python
 def get_dmy(fecha_str: str):
