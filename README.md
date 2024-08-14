@@ -76,14 +76,14 @@ nuevo_nombre = 'C:\Usuarios\Mi_Usuario\Documentos\Mi_archivo_V_1'
 ```
 
 - ***url_embarques():***
-Genera URLs para consultar a una API y una lista de fechas en formato 'ddmmaaaa' dentro de un rango de fechas proporcionado.  
+Genera URL's para consultar a la API y una lista de fechas en formato 'ddmmaaaa' dentro de un rango de fechas proporcionado.  
 ```python
 def url_embarques(start_date: str =None, end_date: str =None):
 ```  
 
-
-
-
+**Requiere:**  
+   - **start_date:** *(como str)* *(opcional)*
+   - **end_date:** *(como str)* *(opcional)*
 
 
 
