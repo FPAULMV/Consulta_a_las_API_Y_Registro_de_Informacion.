@@ -166,5 +166,18 @@ name_dir = Mi_archivo
 num_try = 1
 ```
 
+Resultando en el siguiente archivo .env.
+```bash
+user = mi_usuario
+passw = m1Passw0rd!
+url:https://api_a_consultar/
+query_days = 1
+time_sleep = 60
+download_path = C:\Usuarios\Mi_Usuario\Documentos\
+name_api = mi_api
+name_dir = Mi_archivo
+num_try = 1
+```
+
 
 
