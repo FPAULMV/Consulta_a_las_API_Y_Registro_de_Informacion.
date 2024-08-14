@@ -44,6 +44,7 @@ dia = 1
 mes = 'Enero'
 año = 2024
 ```
+
 - ***validar_path():***
 Valida si una ruta a directorio existe. Si no, la crea.
 ```python
@@ -53,9 +54,13 @@ def validar_path(path: str):
 ```bash
 C:\Ruta\a_validar_de\tu_directortio\
 ```
-**Retorna:** No retorna ningun valor.
+**Retorna:** No retorna ningun valor.  
 
-
+- ***get_version():***
+Encuentra el siguiente número de versión para los archivos que siguen el patrón dado dentro de un directorio específico.  
+```python
+def get_version(file_base: str, directory: str):
+```
 
 
 
