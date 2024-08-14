@@ -25,5 +25,8 @@ pip install requests python-decouple
 
 Puedes clonar este repositorio a travez  git bash. 
 ```bash
-   git clone <https://github.com/FPAULMV/Consulta_a_las_API_de_Pemex>
+   git clone https://github.com/FPAULMV/Consulta_a_las_API_de_Pemex
+
 ```
+### **Descripción de funciones.**  
+***get_dmy()***
