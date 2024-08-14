@@ -157,26 +157,14 @@ download_path = C:\Usuarios\Mi_Usuario\Documentos\
 ```bash
 name_api = mi_api
 ```
-***name_dir:*** Utilizada en variable *path* de la funcion *main()*. Define despues de la ruta principal, el nombre de la carpeta donde se guardaran los archivos, esto para dar control a donde se guardan los documentos de cada API. 
+***name_dir:*** Utilizada en variable *path* de la funcion *main()*. Define despues de la ruta principal *('download_path')*, el nombre de la carpeta donde se guardaran los archivos, esto para dar control a donde se guardan los documentos de cada API. 
 ```bash
 name_dir = Mi_archivo
 ```
-
-
-
-num_try = 2
-
-server = 
-database = 
-user_name = 
-password = 
-driver = 
-
-
-
-
-
-
+***num_try:*** Utilizada en variable *max_retries* de la funcion *main()*. Define el numero de intentos que se realizaran a la API en caso de que la solicitud http devuelva un valor diferente de *'200'*. Puede cambiar el valor dependiendo de sus necesidades. 
+```bash
+num_try = 1
+```
 
 
 
