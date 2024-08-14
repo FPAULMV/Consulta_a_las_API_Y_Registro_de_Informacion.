@@ -173,3 +173,73 @@ name_api = mi_api
 name_dir = Mi_archivo
 num_try = 1
 ```
+
+### **Uso**
+
+Aquí se presentan ejemplos de cómo utilizar las funciones y scripts disponibles en este repositorio.
+
+#### **1. Configuración del entorno**
+
+Antes de ejecutar el script principal, asegúrate de que el archivo `.env` esté configurado correctamente con las credenciales y parámetros necesarios:
+
+```bash
+user = mi_usuario
+passw = m1Passw0rd!
+url = https://api_a_consultar/
+query_days = 1
+time_sleep = 60
+download_path = C:\Usuarios\Mi_Usuario\Documentos\
+name_api = mi_api
+name_dir = Mi_archivo
+num_try = 1
+```
+
+#### **2. Ejecución del script principal**
+
+Para ejecutar el script principal y comenzar a descargar datos desde la API de Pemex, usa el siguiente comando en la terminal:
+
+```bash
+python main.py
+```
+
+El script consultará la API en el rango de fechas especificado, descargará los datos y los almacenará en la carpeta indicada en el archivo `.env`.
+
+#### **3. Uso de funciones individuales**
+
+Puedes usar las funciones de manera individual en otros scripts o de forma interactiva. Aquí algunos ejemplos:
+
+**Obtener día, mes y año de una fecha:**
+
+```python
+from funciones import get_dmy
+
+fecha = '01012024'
+dia, mes, año = get_dmy(fecha)
+print(dia, mes, año)  # Salida: 1 Enero 2024
+```
+
+**Validar o crear un directorio:**
+
+```python
+from funciones import validar_path
+
+ruta = 'C:\Usuarios\Mi_Usuario\Documentos\Nueva_Carpeta\'
+validar_path(ruta)
+```
+
+**Generar URLs para consultas a la API:**
+
+```python
+from funciones import url_embarques
+
+urls, fechas = url_embarques('01012024', '03012024')
+print(urls)  # Salida: ['https://api_a_consultar/01012024', 'https://api_a_consultar/02012024', 'https://api_a_consultar/03012024']
+```
+
+#### **4. Errores comunes y soluciones**
+
+- **Error 429: Demasiadas solicitudes:**  
+  Si encuentras este error, puedes ajustar la variable `time_sleep` en el archivo `.env` para aumentar el tiempo de espera entre solicitudes y evitar este problema.
+
+- **Error de autenticación:**  
+  Verifica que las credenciales en el archivo `.env` sean correctas. Si cambian, deberás actualizarlas.
