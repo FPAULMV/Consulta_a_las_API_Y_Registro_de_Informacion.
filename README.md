@@ -1,6 +1,6 @@
 # Consulta_a_las_API_de_Pemex
 
-# - **Propósito:**
+## - **Propósito:**
  
    Las API´s de Pemex solo están disponibles para sus comercializadores afiliados. Este repositorio se crea mientras trabajo para uno de estos y pretende automatizar las consultas a la API para descargar y almacenar esta información.  
 ## - **Funcionamiento general:**
@@ -16,7 +16,7 @@
   ~ La funcion *validar_path()* busca la recien creada ruta a el directorio y si no la encuentra la crea.  
   ~ Enseguida se creara un nombre para el documento descargado por la API usando la convinacion de la variable del archivo .env *'name_dir'* + 
 
-# - **Principales Funciones:**
+## - **Principales Funciones:**
    Inicialmente hay que generar un archvio .env en el directorio raiz de el proyecto donde ingresaremos configuraciones clave para el funcionamiento del scrip. Se explican a continuacion:
 
    **-- Datos de conexión a SQL Server. --**
