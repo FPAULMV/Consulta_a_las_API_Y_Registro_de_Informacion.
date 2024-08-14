@@ -149,15 +149,21 @@ query_days = 1
 ```bash
 time_sleep = 60 
 ```
-***download_path:*** Utilizada en la funcion *timer()* indica el numero de segundos para la cuenta regresiva. Predeterminado en *'60'*.
+***download_path:*** Utilizada en variable *path* de la funcion *main()*. Define la ruta donde se descargara la informacion de la API y el nombre que va a tener cada archivo segun su version. 
 ```bash
-time_sleep = 60 
+download_path = C:\Usuarios\Mi_Usuario\Documentos\
+```  
+***name_api:*** Utilizada en variable *path* de la funcion *main()*. Define despues de la ruta principal, el nombre de la carpeta donde se guardaran los archivos, esto para dar control a donde se guardan los documentos de cada API. 
+```bash
+name_api = mi_api
+```
+***name_dir:*** Utilizada en variable *path* de la funcion *main()*. Define despues de la ruta principal, el nombre de la carpeta donde se guardaran los archivos, esto para dar control a donde se guardan los documentos de cada API. 
+```bash
+name_dir = Mi_archivo
 ```
 
 
-download_path = C:\Usuarios\Mi_Usuario\Documentos\
-name_api = Embarques 
-name_dir = Embarque
+
 num_try = 2
 
 server = 
