@@ -60,8 +60,11 @@ C:\Ruta\a_validar_de\tu_directortio\
 Encuentra el siguiente número de versión para los archivos que siguen el patrón dado dentro de un directorio específico.  
 ```python
 def get_version(file_base: str, directory: str):
-```
-
+```  
+**Requiere:** 
+   - **file_base:
+     ** *(como str)* La base del nombre que llevara el archvio descargado, a este se le agregara *'_V_'* mas el numero de version *'1'*.
+     
 
 
 
