@@ -62,11 +62,15 @@ Encuentra el siguiente número de versión para los archivos que siguen el patr�
 def get_version(file_base: str, directory: str):
 ```  
 **Requiere:** 
-   - **file_base:**
-      *(como str)* La base del nombre que llevara el archvio descargado, a este se le agregara *'_V_'* mas el numero de version *'1'*.
-     
-
-
+   - **file_base:** *(como str)*
+     El nombre base que llevara el archvio descargado, a este se le agregara *'_V_'* mas, el numero de version *'1'*.
+   - **directory:** *(como str)*
+     El directorio donde se encuentran los archivos.
+```bash
+file_base = 'Mi_archivo'
+directory = 'c:\Usuarios\Mi_Usuario\Documentos\'
+```
+**Retorna:** El nombre del nuevo archivo con el sufijo de versión.  
 
 
 
