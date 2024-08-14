@@ -76,16 +76,30 @@ nuevo_nombre = 'C:\Usuarios\Mi_Usuario\Documentos\Mi_archivo_V_1'
 ```
 
 - ***url_embarques():***
-Genera URL's para consultar a la API y una lista de fechas en formato 'ddmmaaaa' dentro de un rango de fechas proporcionado.  
+Genera URL's de la API  a consultar agregando el parametro de busqueda para la API, que en este caso es una fecha en formato 'ddmmaaaa' y una lista de fechas en formato 'ddmmaaaa' dentro de un rango de fechas proporcionado.
 ```python
 def url_embarques(start_date: str =None, end_date: str =None):
 ```  
 
 **Requiere:**  
    - **start_date:** *(como str)* *(opcional)*
+     Fecha de inicio en formato 'ddmmaaaa'. De no proporcionar se toma el valor de ***'query_days'*** en el archivo .env.
    - **end_date:** *(como str)* *(opcional)*
+     Fecha de fin en formato 'ddmmaaaa'. De no proporcionar se toma el valor de la fecha actual.
+```bash
+start_date = '01012024'
+end_date = '03012024'
+```
 
-
+**Retorna:**
+   - Lista de URL's a consular mas el parametro de busqueda. 
+   - Lista de fechas en formato 'ddmmaaaa'
+```bash
+URL's:
+(https://api_a_consultar/01012024, https://api_a_consultar/02012024, https://api_a_consultar/03012024)
+Fechas:
+(01012024, 02012024, 03012024)
+```
 
 
 
