@@ -29,7 +29,7 @@ Puedes clonar este repositorio a travez  git bash.
 
 ```
 ### **Descripción de funciones.**  
-- ***get_dmy()***
+- ***get_dmy():***  
 Devuelve dia, mes, año de una fecha dada.
 ```python
 def get_dmy(fecha_str: str):
@@ -44,3 +44,29 @@ dia = 1
 mes = 'Enero'
 año = 2024
 ```
+- ***validar_path()***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
