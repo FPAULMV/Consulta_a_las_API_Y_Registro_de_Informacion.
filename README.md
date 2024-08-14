@@ -48,7 +48,7 @@ año = 2024
 ```
 
 - ***validar_path():***
-Valida si una ruta a directorio existe. Si no, la crea.
+Valida si una ruta a un directorio existe. Si no, la crea.
 ```python
 def validar_path(path: str):
 ```
@@ -65,7 +65,7 @@ def get_version(file_base: str, directory: str):
 ```  
 **Requiere:** 
    - **file_base:** *(como str)*
-     El nombre base que llevara el archvio descargado, a este se le agregara *'_V_'* mas, el numero de version *'1'*.
+     El nombre base que llevara el archvio descargado, a este se le agregara *"_V_"* mas, el numero de version *'1'*.
    - **directory:** *(como str)*
      El directorio donde se encuentran los archivos.
 ```bash
