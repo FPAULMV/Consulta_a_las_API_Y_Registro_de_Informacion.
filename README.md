@@ -18,4 +18,12 @@ Instalar via pip las librerias requests y  python-decouple.
 ```bash
 pip install requests python-decouple
 ```
-*json*, *os*, *datetime* (de la cual *datetime* y *timedelta* son partes), *re*, *time*, *sys*, y *logging* son parte de la biblioteca estándar de Python, por lo que no necesitan instalación a través de pip.
+*json*, *os*, *datetime* (de la cual *datetime* y *timedelta* son partes), *re*, *time*, *sys*, y *logging* son parte de la biblioteca estándar de Python, por lo que no necesitan instalación a través de pip.  
+
+
+### **Instalacion.**  
+
+Puedes clonar este repositorio a travez  git bash. 
+```bash
+   git clone <https://github.com/FPAULMV/Consulta_a_las_API_de_Pemex>
+```
