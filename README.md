@@ -30,3 +30,12 @@ Puedes clonar este repositorio a travez  git bash.
 ```
 ### **Descripción de funciones.**  
 - ***get_dmy()***
+Devuelve dia, mes, año de una fecha dada.
+```python
+def get_dmy(fecha_str: str):
+```
+**Requiere:** una fecha como str en formato 'ddmmaaaa'.  
+```bash
+'01012024'
+```
+**Retorna:** El dia (como int), el nombre del mes en español
