@@ -10,7 +10,7 @@ Las API de Pemex solo están disponibles para sus comercializadores afiliados. E
 - [Descripción de funciones](#descripcion-de-funciones)
 - [Configuración](#configuracion)
 - [Uso](#uso)
-- [Errores comunes y soluciones](#licencia)
+- [Errores comunes y soluciones](#errores-comunes-y-soluciones)
    
 ### Dependencias  
 
