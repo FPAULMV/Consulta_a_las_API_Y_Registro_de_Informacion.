@@ -1,64 +1,143 @@
 # Procesamiento de Archivos JSON y Almacenamiento en SQL Server
 
 ## **Propósito:**  
-Este proyecto tiene como objetivo leer archivos JSON almacenados en un directorio específico, procesar los datos y almacenarlos en una base de datos SQL Server. Los archivos JSON se identifican por su fecha en el nombre del archivo y se almacenan en subdirectorios organizados por mes y año.
+Este proyecto tiene como objetivo leer archivos JSON almacenados en un directorio específico, procesar los datos y almacenarlos en una base de datos SQL Server. Los archivos JSON se identifican por su fecha en el nombre del archivo y se almacenan en subdirectorios organizados por mes y año.  
 
-## Descripción del Código
+## **Contenido:**  
+- [Dependencias](#dependencias)
+- [Instalación](#instalacion)
+- [Descripción de funciones](#descripcion-de-funciones)
+- [Configuración](#configuracion)
+- [Uso](#uso)
 
 ### Dependencias
 
-El script utiliza las siguientes bibliotecas:
+**Librerías requeridas:** `os`, `json`, `pyodbc`, `decouple`, `datetime`.
 
-- `os`: Para interactuar con el sistema operativo.
-- `json`: Para manejar los archivos JSON.
-- `pyodbc`: Para la conexión y manipulación de la base de datos SQL Server.
-- `decouple`: Para manejar las variables de entorno.
-- `datetime`: Para trabajar con fechas.
+Instalar las librerías `pyodbc` y `python-decouple` vía pip:  
+```bash
+pip install pyodbc python-decouple
+```
+*`json`*, *`os`*, *`datetime`* (de la cual *`datetime`* y *`timedelta`* son partes), son parte de la biblioteca estándar de Python, por lo que no necesitan instalación a través de pip.  
 
-### Funciones
+### Instalación 
 
-#### `get_dmy(fecha_str)`
+Puedes clonar este repositorio a través de git: 
+```bash
+git clone https://github.com/FPAULMV/Consulta_a_las_API_de_Pemex_Y_Registro_de_Informacion.
+```
+### Descripción de funciones  
 
-Convierte una cadena de fecha en formato `ddmmaaaa` a un objeto `datetime` y devuelve el mes y el año en formato de cadena. Utiliza un arreglo para los nombres de los meses en español.
+- ***get_dmy():***  
+Devuelve día, mes, y año de una fecha dada.
+```python
+def get_dmy(fecha_str: str):
+```
+**Requiere:** una fecha *(como str)* en formato `'ddmmaaaa'`.  
+```bash
+'01012024'
+```
+**Retorna:** El día *(como int)*, el nombre del mes en español *(como str)*, el año *(como int)*.
+```bash
+dia = 1
+mes = 'Enero'
+año = 2024
+```
+- ***get_dates():***
+Genera una lista de fechas en formato `'ddmmaaaa'` dentro de un rango de fechas proporcionado.
+```python
+def url_embarques(start_date: str =None, end_date: str =None):
+```
 
-#### `get_dates(start_date=None, end_date=None)`
+**Requiere:**  
+   - **start_date:** *(como str, opcional)* Fecha de inicio en formato `'ddmmaaaa'`. Si no se proporciona, se toma el valor de ***`query_days`*** en el archivo `.env`.
+   - **end_date:** *(como str, opcional)* Fecha de fin en formato `'ddmmaaaa'`. Si no se proporciona, se toma el valor de la fecha actual.
+```bash
+start_date = '01012024'
+end_date = '03012024'
+```
 
-Genera una lista de fechas en formato `ddmmaaaa` entre dos fechas proporcionadas. Si no se proporciona una `start_date`, se toma como referencia la fecha actual menos una cantidad de días definida en una variable de entorno (`query_days`). Si no se proporciona una `end_date`, se toma la fecha actual.
-
-#### `guardar_json_en_sql(fecha, month, year)`
-
+**Retorna:**  
+   - Lista de fechas en formato `'ddmmaaaa'`.
+```bash
+Fechas:
+(01012024, 02012024, 03012024)
+```
+- ***guardar_json_en_sql():***
 Esta función realiza lo siguiente:
 1. Determina la ruta donde se almacenan los archivos JSON basándose en la fecha proporcionada (`month` y `year`).
 2. Filtra los archivos en esa ruta que coincidan con la fecha en el nombre del archivo.
-3. Lee los archivos JSON y almacena los datos en la tabla `sinergia_aux.dbo.embarques` de SQL Server.
+3. Lee los archivos JSON y almacena los datos en la tabla indicada por ***`table_name`*** en el archivo `.env`.
 
-### Ejemplo de Uso
+```python
+def url_embarques(start_date: str =None, end_date: str =None):
+```
+**Requiere:**  
+   - **start_date:** *(como str, opcional)* Fecha de inicio en formato `'ddmmaaaa'`. Si no se proporciona, se toma el valor de ***`query_days`*** en el archivo `.env`.
+   - **end_date:** *(como str, opcional)* Fecha de fin en formato `'ddmmaaaa'`. Si no se proporciona, se toma el valor de la fecha actual.
+```bash
+start_date = '01012024'
+end_date = '03012024'
+```
 
-El script establece la conexión a SQL Server utilizando variables de entorno para los detalles de la conexión (`driver`, `server`, `database`, `user_name`, `password`). Luego, llama a la función `get_dates` para obtener las fechas de interés, y para cada fecha, llama a la función `guardar_json_en_sql` para procesar y almacenar los datos.
+### Configuración  
 
-Finalmente, la conexión a SQL Server se cierra.
+Configura las variables de entorno para el script con un archivo `.env` ubicado en el directorio raíz donde se ejecuta el código.  
 
-### Variables de Entorno
+***server:*** Nombre del servidor al cual se va a conectar.  
+```bash
+server = nombre_de_mi_server
+```
+***database:*** Nombre de la base de datos donde se aloja tu tabla.
+```bash
+database = mi_base_de_datos
+```
+***user_name:*** Usuario con el que ingresa a el servidor.
+```bash
+user_name = Usuario_1 
+```
+***password:*** Contraseña de el usuario con el que ingresa a el servidor.
+```bash
+password = m1c0ntrasen4 
+```
+***driver:*** Controlador de conexion a sql server. *(Se tiene predeterminado ODBC Driver 17 for SQL Server pero puede ser cambiado por el de su preferencia.)*
+```bash
+driver = ODBC Driver 17 for SQL Server  
+```
+***table_name:*** Nombre de la tabla donde registra la informacion.
+```bash
+table_name = BaseDeDatos.dbo.MiTabla
+```
+***download_path:*** Utilizada en la variable *`carpeta_json`* de la función *`guardar_json_en_sql()`*. Define la ruta donde se descargará la información de la API y el nombre que va a tener cada archivo según su versión. 
+```bash
+download_path = C:\Usuarios\Mi_Usuario\Documentos\
+```
+***name_api:*** Utilizada en la variable *`carpeta_json`* de la función *`guardar_json_en_sql()`*. Define, después de la ruta principal, el nombre de la carpeta donde se guardarán los archivos. Esto permite controlar dónde se guardan los documentos de cada API. 
+```bash
+name_api = mi_api
+```
+***name_dir:*** Utilizada en la variable *`archivos_json`* de la función *`guardar_json_en_sql()`*. Define, el nombre que tendra el documento una vez la informacion sea descargada por la API. 
+```bash
+name_dir = Mi_archivo
+```
 
-Este script utiliza `decouple` para gestionar las configuraciones a través de variables de entorno. Las siguientes variables deben estar configuradas en un archivo `.env`:
+### Uso  
 
-- `query_days`: Número de días atrás desde la fecha actual para iniciar el proceso.
-- `download_path`: Ruta base donde se encuentran los archivos JSON.
-- `name_api`: Nombre de la API (utilizado en la ruta de los archivos).
-- `name_dir`: Prefijo en los nombres de los archivos JSON.
-- `driver`: Driver de SQL Server.
-- `server`: Nombre del servidor SQL.
-- `database`: Nombre de la base de datos.
-- `user_name`: Nombre de usuario para la conexión a SQL Server.
-- `password`: Contraseña para la conexión a SQL Server.
+Se planea que el uso del scrip, se ejecute en una tarea programada para que consulte automaticamente la consulta a las API segun las nececidades de cada comercializador.  
 
-### Ejecución del Script
+Aquí se presentan ejemplos de cómo utilizar el scrip disponible en este repositorio.   
 
-El script se ejecuta en Python y requiere una configuración previa del entorno y las variables de conexión. Asegúrese de que todos los archivos JSON estén en la ubicación correcta y que las variables de entorno estén configuradas adecuadamente.
+#### **1. Configuración del entorno**  
 
-1. Clone este repositorio o copie el código.
-2. Cree un archivo `.env` con las configuraciones necesarias.
-3. Ejecute el script con `python <nombre_del_script>.py`.
+Antes de ejecutar el script principal, asegúrate de que el archivo `.env` esté configurado correctamente con las credenciales y parámetros necesarios:
 
 ```bash
-python script_json_to_sql.py
+server = nombre_de_mi_server
+database = mi_base_de_datos
+user_name = Usuario_1
+password = m1c0ntrasen4
+driver = ODBC Driver 17 for SQL Server
+table_name = BaseDeDatos.dbo.MiTabla 
+```
+
+
