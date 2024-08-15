@@ -174,7 +174,7 @@ name_dir = Mi_archivo
 num_try = 1
 ```
 
-### **Uso**  
+### Uso  
 
 Se planea que el uso del scrip, se ejecute en una tarea programada para que consulte automaticamente la consulta a las API segun las nececidades de cada comercializador.   
 
