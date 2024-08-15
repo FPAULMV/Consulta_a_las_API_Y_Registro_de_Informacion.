@@ -152,7 +152,7 @@ download_path = C:\Usuarios\Mi_Usuario\Documentos\
 ```bash
 name_api = mi_api
 ```
-***name_dir:*** Utilizada en la variable *`path`* de la función *`main()`*. Define, después de la ruta principal *(`download_path`)*, el nombre de la carpeta donde se guardarán los archivos. Esto permite controlar dónde se guardan los documentos de cada API. 
+***name_dir:*** Utilizada en la variable *`path`* de la función *`main()`*. Define, el nombre que tendra el documento una vez la informacion sea descargada por la API. 
 ```bash
 name_dir = Mi_archivo
 ```
@@ -178,7 +178,7 @@ num_try = 1
 
 Se planea que el uso del scrip, se ejecute en una tarea programada para que consulte automaticamente la consulta a las API segun las nececidades de cada comercializador.   
 
-Aquí se presentan ejemplos de cómo utilizar las funciones y scripts disponibles en este repositorio. 
+Aquí se presentan ejemplos de cómo utilizar el scrip disponible en este repositorio. 
 
 #### **1. Configuración del entorno**
 
