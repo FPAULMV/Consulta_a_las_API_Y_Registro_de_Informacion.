@@ -1,8 +1,8 @@
 
-# Consulta a las API de Pemex
+# Consulta a las API de P-----
 
 ## **Propósito:**  
-Las API de Pemex solo están disponibles para sus comercializadores afiliados. Este repositorio se crea mientras trabajo para uno de estos comercializadores y tiene como objetivo automatizar las consultas a la API para descargar y almacenar la información obtenida.  
+Las API de P----- solo están disponibles para sus comercializadores afiliados. Este repositorio se crea mientras trabajo para uno de estos comercializadores y tiene como objetivo automatizar las consultas a la API para descargar y almacenar la información obtenida.  
 
 ## **Contenido:**  
 - [Dependencias](#dependencias)
@@ -26,7 +26,7 @@ pip install requests python-decouple
 
 Puedes clonar este repositorio a través de git: 
 ```bash
-git clone https://github.com/FPAULMV/Consulta_a_las_API_de_Pemex_Y_Registro_de_Informacion.
+git clone https://github.com/FPAULMV/Consulta_a_las_API_de_P-----_Y_Registro_de_Informacion.
 ```
 
 ### Descripción de funciones  
@@ -124,15 +124,15 @@ Tiempo restante para la siguiente consulta: 1 segundo.
 
 Configura las variables de entorno para el script con un archivo `.env` ubicado en el directorio raíz donde se ejecuta el código. 
 
-***user:*** Nombre de usuario proporcionado por Pemex para autenticarnos en la API.
+***user:*** Nombre de usuario proporcionado por P----- para autenticarnos en la API.
 ```bash
 user = mi_usuario
 ```
-***passw:*** Contraseña proporcionada por Pemex, del usuario con el que nos autenticamos en la API.
+***passw:*** Contraseña proporcionada por P-----, del usuario con el que nos autenticamos en la API.
 ```bash
 passw = m1Passw0rd!
 ```
-***url:*** URL de la API proporcionada por Pemex. 
+***url:*** URL de la API proporcionada por P-----. 
 ```bash
 url = https://api_a_consultar/
 ```
@@ -198,7 +198,7 @@ num_try = 1
 
 #### **2. Ejecución del script principal**
 
-Para ejecutar el script principal y comenzar a descargar datos desde la API de Pemex, usa el siguiente comando en la terminal:
+Para ejecutar el script principal y comenzar a descargar datos desde la API de P-----, usa el siguiente comando en la terminal:
 
 ```bash
 python main.py
