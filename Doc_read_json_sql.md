@@ -24,7 +24,7 @@ pip install pyodbc python-decouple
 
 Puedes clonar este repositorio a través de git: 
 ```bash
-git clone https://github.com/FPAULMV/Consulta_a_las_API_de_Pemex_Y_Registro_de_Informacion.
+git clone https://github.com/FPAULMV/Consulta_a_las_API_Y_Registro_de_Informacion.
 ```
 ### Descripción de funciones  
 
